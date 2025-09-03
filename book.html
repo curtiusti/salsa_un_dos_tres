@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Salsa Un Dos Tres</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon2.ico">
+    <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css?v=<?php echo date('his'); ?>">
+
+    <!-- Google Webfont (Antonio) link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome link -->
+    <script src="https://kit.fontawesome.com/137208bbd5.js" crossorigin="anonymous"></script>
+    <meta name="author" content="T. Curtius">
+    <meta name="description" content="Salsa Schule in Karlsruhe">
+    <meta name="keywords" content="Salsa, Tanzen, Tanzkurs, Salsa Lernen, Salsakurs buchen">
+    <meta name="date" content="2025-01-15T18:15:40+01:00">
+    <meta name="robots" content="index,follow">
+    <!-- script src="js/header.js" defer></script -->
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="header-logo">
+                <img src="images/banner_img/salseros_juntos.png" alt="Salsa Un Dos Tres Logo">
+                <h1 id="logo-title">Salsa Un Dos Tres</h1>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-school"></i></i> Schule</a></li>
+                    <li><a href="events.html"><i class="fa-regular fa-star"></i> Events</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-people-group"></i> Über uns</a></li>
+                    <li><a href="book.html" id="book-button" class="cta-button"><i
+                                class="fa-solid fa-calendar-check"></i> Buchen</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <nav role="navigation" class="mobile-nav">
+                <h2 class="menu-button"></h2>
+                <div id="menuToggle">
+                    <input type="checkbox" id="menuCheckbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="index.html"><i class="fa-solid fa-school"></i></i> Schule</a></li>
+                        <li><a href="events.html"><i class="fa-regular fa-star"></i> Events</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-people-group"></i> Über uns</a></li>
+                        <li><a href="book.html"><i class="fa-solid fa-calendar-check"></i> Buchen</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="book-banner">
+        <section id="book">
+            <h1>Salsa Kurs buchen</h1>
+            <div class="booking-container">
+                <div class="book-contact">
+                    <div class="info-box">
+                        <img src="images/content/looking_at_the_camera_unsure.jpeg" alt="Neugierige Tänzer"
+                            class="booking-image">
+                        <div class="book-details">
+                            <h3>Kursgebühren</h3>
+                            <ul>
+                                <li>Einzelkurs: 15€</li>
+                                <li>5er Karte: 65€</li>
+                                <li>10er Karte: 120€</li>
+                            </ul>
+                            <p>Alle Preise pro Person</p>
+                        </div>
+
+                    </div>
+                    <div class="info-box">
+                        <img src="images/content/having_fun.jpg" alt="Tanzende haben Spaß" class="booking-image">
+                        <div class="book-details">
+                            <h3>Kontakt</h3>
+                            <p>Bei Fragen oder zur Buchung kontaktieren Sie uns bitte:</p>
+                            <span class="info-email"><i class="fa-solid fa-envelope"></i>
+                                <h4> E-Mail: abc@salsa123.com</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Kurs:</label>
+                            <select id="class" name="class" required>
+                                <option value="">Bitte wählen Sie einen Kurs</option>
+                                <option value="beginner">Anfänger</option>
+                                <option value="intermediate">Fortgeschrittene</option>
+                                <option value="advanced">Profis</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Datum:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Uhrzeit:</label>
+                            <select id="class" name="class" required>
+                                <option value="">Bitte wählen Sie eine Uhrzeit</option>
+                                <option value="19">19:00 Uhr</option>
+                                <option value="20">19:00 Uhr</option>
+                                <option value="21">19:00 Uhr</option>
+                            </select>                        </div>
+                        <button type="submit" class="submit-button">Kurs buchen</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <div class="dancing-div">
+        </div>
+        <footer>
+            <p>&copy; 2025 Salsa Un Dos Tres. Alle Rechte vorbehalten.</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>
